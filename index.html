@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Archivo+Black"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+
+    <title>Star Wars RPG</title>
+  </head>
+  <body>
+    <!--Heading-->
+    <audio autoplay>
+      <source src="starwars.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+    <h1 id="heading">Star Wars RPG</h1>
+    <hr />
+
+    <!--Character Select-->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 id="character-select-text">Choose Your Character:</h1>
+        </div>
+      </div>
+      <div class="row your-container">
+        <div id="1" class="col-12 col-sm-6 col-md-3 image c1">
+          <h4 class="character-name">Obi Wan</h4>
+          <img src="/assets/images/obiwan.jpeg" alt="Obi Wan" />
+          <h3 class="character-health">120</h3>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 image c2">
+          <h4 class="character-name">Yoda</h4>
+          <img src="/assets/images/yoda.png" alt="Yoda" />
+          <h3 class="character-health">200</h3>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 image c3">
+          <h4 class="character-name">Darth Maul</h4>
+          <img src="/assets/images/darthmaul.png" alt="Darth Maul" />
+          <h3 class="character-health">150</h3>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 image c4">
+          <h4 class="character-name">Darth Vader</h4>
+          <img src="/assets/images/darthvader.jpg" alt="Darth Vader" />
+          <h3 class="character-health">180</h3>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+    <!--Opponent Select-->
+    <div class="container-fluid opponents">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 id="character-select-text">Choose Your Opponent:</h1>
+        </div>
+      </div>
+      <div class="row opponent-container">
+        <div id="1" class="col-12 col-sm-6 col-md-3 image o1">
+          <h4 class="character-name">Obi Wan</h4>
+          <img src="/assets/images/obiwan.jpeg" alt="Obi Wan" />
+          <h3 class="character-health">120</h3>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 image o2">
+          <h4 class="character-name">Yoda</h4>
+          <img src="/assets/images/yoda.png" alt="Yoda" />
+          <h3 class="character-health">200</h3>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 image o3">
+          <h4 class="character-name">Darth Maul</h4>
+          <img src="/assets/images/darthmaul.png" alt="Darth Maul" />
+          <h3 class="character-health">150</h3>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 image o4">
+          <h4 class="character-name">Darth Vader</h4>
+          <img src="/assets/images/darthvader.jpg" alt="Darth Vader" />
+          <h3 class="character-health">180</h3>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="col-md-12 text-center">
+      <button id="singlebutton" name="singlebutton" class="btn btn-dark btn-lg">
+        Attack
+      </button>
+    </div>
+
+    <hr />
+
+    <!--Opponent-->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 id="character-select-text">Opponent:</h1>
+        </div>
+      </div>
+      <div class="row defender-container">
+        <div id="1" class="col-12 col-sm-6 col-md-3 image d1">
+          <h4 class="character-name">Obi Wan</h4>
+          <img src="/assets/images/obiwan.jpeg" alt="Obi Wan" />
+          <h3 class="character-health">120</h3>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 image d2">
+          <h4 class="character-name">Yoda</h4>
+          <img src="/assets/images/yoda.png" alt="Yoda" />
+          <h3 class="character-health">200</h3>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 image d3">
+          <h4 class="character-name">Darth Maul</h4>
+          <img src="/assets/images/darthmaul.png" alt="Darth Maul" />
+          <h3 class="character-health">150</h3>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 image d4">
+          <h4 class="character-name">Darth Vader</h4>
+          <img src="/assets/images/darthvader.jpg" alt="Darth Vader" />
+          <h3 class="character-health">180</h3>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+    <h1 id="battle-info"></h1>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/javascript/game.js"></script>
+  </body>
+</html>

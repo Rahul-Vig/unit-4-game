@@ -1,0 +1,61 @@
+body {
+  background-image: url("/assets/images/background.png");
+}
+
+#heading {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 70px;
+  text-align: center;
+  color: black;
+  font-weight: 900;
+  text-shadow: 8px 8px 0 yellow, 1px -1px 0 yellow, -1px 1px 0 yellow,
+    1px 1px 0 yellow;
+}
+
+#character-select-text {
+  font-family: "Archivo Black", sans-serif;
+  text-align: center;
+  font-size: 50px;
+  color: black;
+  font-weight: 900;
+  text-shadow: 8px 8px 0 yellow, 1px -1px 0 yellow, -1px 1px 0 yellow,
+    1px 1px 0 yellow;
+}
+
+.your-container {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.397);
+}
+
+.opponent-container {
+  text-align: center;
+  background-color: rgba(238, 16, 16, 0.486);
+}
+
+.defender-container {
+  text-align: center;
+  background-color: rgba(238, 16, 16, 0.486);
+}
+
+.image:hover {
+  background-color: rgba(255, 255, 0, 0.63);
+}
+
+img {
+  width: 200px;
+  height: 200px;
+}
+
+.image {
+  border: 5px solid black;
+}
+
+.character-name {
+  font-weight: bolder;
+  color: black;
+}
+
+.character-health {
+  font-weight: bolder;
+  color: black;
+}

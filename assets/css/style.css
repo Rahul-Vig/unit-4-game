@@ -59,3 +59,13 @@ img {
   font-weight: bolder;
   color: black;
 }
+
+#your-damage {
+  color: white;
+  font-weight: 900;
+}
+
+#opp-damage {
+  color: white;
+  font-weight: 900;
+}

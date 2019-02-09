@@ -87,15 +87,45 @@ $(document).ready(function() {
     }
   });
 
-  $(".o2").on("click", function() {
+  $(".o1").on("click", function() {
     if (opponentSelected === false) {
-      $(".o2").hide();
+      $(".o1").hide();
       $(".defender-container").show();
-      $(".d1").hide();
+      $(".d2").hide();
       $(".d3").hide();
       $(".d4").hide();
-      $(".d2").show();
+      $(".d1").show();
       opponentSelected = true;
+      $(".opponents").hide();
+      $("#heading").hide();
+    }
+  });
+
+  $(".o3").on("click", function() {
+    if (opponentSelected === false) {
+      $(".o3").hide();
+      $(".defender-container").show();
+      $(".d2").hide();
+      $(".d1").hide();
+      $(".d4").hide();
+      $(".d3").show();
+      opponentSelected = true;
+      $(".opponents").hide();
+      $("#heading").hide();
+    }
+  });
+
+  $(".o4").on("click", function() {
+    if (opponentSelected === false) {
+      $(".o4").hide();
+      $(".defender-container").show();
+      $(".d2").hide();
+      $(".d1").hide();
+      $(".d3").hide();
+      $(".d4").show();
+      opponentSelected = true;
+      $(".opponents").hide();
+      $("#heading").hide();
     }
   });
 });

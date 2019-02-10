@@ -1,5 +1,5 @@
 body {
-  background-image: url("/assets/images/background.png");
+  background-image: url("../images/swbg.jpg");
 }
 
 #heading {
@@ -63,9 +63,11 @@ img {
 #your-damage {
   color: white;
   font-weight: 900;
+  background: black;
 }
 
 #opp-damage {
   color: white;
   font-weight: 900;
+  background: black;
 }

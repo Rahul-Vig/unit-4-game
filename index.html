@@ -24,6 +24,13 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
 
     <title>Star Wars RPG</title>
+
+    <audio controls autoplay id="audio-example">
+      <!-- One or more source files, each referencing the same audio but in a different file format. The browser will choose the first file which it is able to play. -->
+      <source src="starwars.mp3" />
+      You will see this text if native audio playback is not supported.
+      <!-- You could use this fall-back feature to insert a JavaScript-based audio player. -->
+    </audio>
   </head>
   <body>
     <!--Heading-->
@@ -40,23 +47,23 @@
       <div class="row your-container">
         <div id="1" class="col-12 col-sm-6 col-md-3 image c1">
           <h4 class="character-name">Obi Wan</h4>
-          <img src="/assets/images/obiwan.jpeg" alt="Obi Wan" />
-          <h3 class="character-health">120</h3>
+          <img src="./assets/images/obiwan.jpeg" alt="Obi Wan" />
+          <h3 id="csObiHealth" class="character-health">150</h3>
         </div>
         <div class="col-12 col-sm-6 col-md-3 image c2">
           <h4 class="character-name">Yoda</h4>
-          <img src="/assets/images/yoda.png" alt="Yoda" />
-          <h3 class="character-health">200</h3>
+          <img src="./assets/images/yoda.png" alt="Yoda" />
+          <h3 id="csYodaHealth" class="character-health">200</h3>
         </div>
         <div class="col-12 col-sm-6 col-md-3 image c3">
           <h4 class="character-name">Darth Maul</h4>
-          <img src="/assets/images/darthmaul.png" alt="Darth Maul" />
-          <h3 class="character-health">150</h3>
+          <img src="./assets/images/darthmaul.png" alt="Darth Maul" />
+          <h3 id="csDarthMaulHealth" class="character-health">160</h3>
         </div>
         <div class="col-12 col-sm-6 col-md-3 image c4">
           <h4 class="character-name">Darth Vader</h4>
-          <img src="/assets/images/darthvader.jpg" alt="Darth Vader" />
-          <h3 class="character-health">180</h3>
+          <img src="./assets/images/darthvader.jpg" alt="Darth Vader" />
+          <h3 id="csDarthVaderHealth" class="character-health">180</h3>
         </div>
       </div>
     </div>
@@ -72,22 +79,22 @@
       <div class="row opponent-container">
         <div id="1" class="col-12 col-sm-6 col-md-3 image o1">
           <h4 class="character-name">Obi Wan</h4>
-          <img src="/assets/images/obiwan.jpeg" alt="Obi Wan" />
-          <h3 class="character-health">120</h3>
+          <img src="./assets/images/obiwan.jpeg" alt="Obi Wan" />
+          <h3 class="character-health">150</h3>
         </div>
         <div class="col-12 col-sm-6 col-md-3 image o2">
           <h4 class="character-name">Yoda</h4>
-          <img src="/assets/images/yoda.png" alt="Yoda" />
+          <img src="./assets/images/yoda.png" alt="Yoda" />
           <h3 class="character-health">200</h3>
         </div>
         <div class="col-12 col-sm-6 col-md-3 image o3">
           <h4 class="character-name">Darth Maul</h4>
-          <img src="/assets/images/darthmaul.png" alt="Darth Maul" />
-          <h3 class="character-health">150</h3>
+          <img src="./assets/images/darthmaul.png" alt="Darth Maul" />
+          <h3 class="character-health">160</h3>
         </div>
         <div class="col-12 col-sm-6 col-md-3 image o4">
           <h4 class="character-name">Darth Vader</h4>
-          <img src="/assets/images/darthvader.jpg" alt="Darth Vader" />
+          <img src="./assets/images/darthvader.jpg" alt="Darth Vader" />
           <h3 class="character-health">180</h3>
         </div>
       </div>
@@ -101,8 +108,8 @@
       </div>
       <div class="col-md-4 text-center">
         <button
-          id="singlebutton"
-          name="singlebutton"
+          id="attack-button"
+          name="attack-button"
           class="btn btn-dark btn-lg"
         >
           Attack
@@ -125,29 +132,28 @@
       <div class="row defender-container">
         <div id="1" class="col-12 col-sm-6 col-md-3 image d1">
           <h4 class="character-name">Obi Wan</h4>
-          <img src="/assets/images/obiwan.jpeg" alt="Obi Wan" />
-          <h3 class="character-health">120</h3>
+          <img src="./assets/images/obiwan.jpeg" alt="Obi Wan" />
+          <h3 id="dsObiHealth" class="character-health">160</h3>
         </div>
         <div class="col-12 col-sm-6 col-md-3 image d2">
           <h4 class="character-name">Yoda</h4>
-          <img src="/assets/images/yoda.png" alt="Yoda" />
-          <h3 class="character-health">200</h3>
+          <img src="./assets/images/yoda.png" alt="Yoda" />
+          <h3 id="dsYodaHealth" class="character-health">200</h3>
         </div>
         <div class="col-12 col-sm-6 col-md-3 image d3">
           <h4 class="character-name">Darth Maul</h4>
-          <img src="/assets/images/darthmaul.png" alt="Darth Maul" />
-          <h3 class="character-health">150</h3>
+          <img src="./assets/images/darthmaul.png" alt="Darth Maul" />
+          <h3 id="dsDarthMaulHealth" class="character-health">150</h3>
         </div>
         <div class="col-12 col-sm-6 col-md-3 image d4">
           <h4 class="character-name">Darth Vader</h4>
-          <img src="/assets/images/darthvader.jpg" alt="Darth Vader" />
-          <h3 class="character-health">180</h3>
+          <img src="./assets/images/darthvader.jpg" alt="Darth Vader" />
+          <h3 id="dsDarthVaderHealth" class="character-health">180</h3>
         </div>
       </div>
     </div>
 
     <hr />
-    <h1 id="battle-info"></h1>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

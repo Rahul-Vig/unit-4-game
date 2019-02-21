@@ -178,19 +178,23 @@ $(document).ready(function() {
       $("#csObiHealth").text(obiwanHealth);
       $("#dsYodaHealth").text(yodaHealth);
       if (obiwanHealth <= 0) {
-        alert("You Lose!");
+        $("#your-damage").text("You dealt " + obiWanAttack + " damage!");
+        $("#opp-damage").text("You took " + yodaCounter + " damage!");
+       alert("You Lose!");
         reset();
       }
 
       if (yodaHealth <= 0 && obiwanHealth > 0) {
+        $("#your-damage").text("You dealt " + obiWanAttack + " damage!");
+        $("#opp-damage").text("You took " + yodaCounter + " damage!");
         alert("You defeated Yoda!");
         oppDeafeated++;
         oppYoda = false;
         opponentSelected = false;
         $(".d2").hide();
         $(".opponents").show();
-        $("#your-damage").text("");
-        $("#opp-damage").text("");
+        // $("#your-damage").text("");
+        // $("#opp-damage").text("");
         if (oppDeafeated === 3) {
           alert("All your enemies have fallen before you!");
           reset();
@@ -214,19 +218,23 @@ $(document).ready(function() {
       $("#csObiHealth").text(obiwanHealth);
       $("#dsDarthMaulHealth").text(darthMaulHealth);
       if (obiwanHealth <= 0) {
+        $("#your-damage").text("You dealt " + obiWanAttack + " damage!");
+        $("#opp-damage").text("You took " + darthMaulCounter + " damage!");
         alert("You Lose!");
         reset();
       }
 
       if (darthMaulHealth <= 0 && obiwanHealth > 0) {
+        $("#your-damage").text("You dealt " + obiWanAttack + " damage!");
+        $("#opp-damage").text("You took " + darthMaulCounter + " damage!");
         alert("You defeated Darth Maul!!");
         oppDeafeated++;
         opponentSelected = false;
         oppDarthMaul = false;
         $(".d3").hide();
         $(".opponents").show();
-        $("#your-damage").text("");
-        $("#opp-damage").text("");
+        // $("#your-damage").text("");
+        // $("#opp-damage").text("");
         if (oppDeafeated === 3) {
           alert("All your enemies have fallen before you!");
           reset();
@@ -250,19 +258,23 @@ $(document).ready(function() {
       $("#csObiHealth").text(obiwanHealth);
       $("#dsDarthVaderHealth").text(darthVaderHealth);
       if (obiwanHealth <= 0) {
+        $("#your-damage").text("You dealt " + obiWanAttack + " damage!");
+        $("#opp-damage").text("You took " + darthVaderCounter + " damage!");
         alert("You Lose!");
         reset();
       }
 
       if (darthVaderHealth <= 0 && obiwanHealth > 0) {
+        $("#your-damage").text("You dealt " + obiWanAttack + " damage!");
+        $("#opp-damage").text("You took " + darthVaderCounter + " damage!");
         alert("You defeated Darth Vader!");
         oppDeafeated++;
         opponentSelected = false;
         oppDarthMaul = false;
         $(".d4").hide();
         $(".opponents").show();
-        $("#your-damage").text("");
-        $("#opp-damage").text("");
+        // $("#your-damage").text("");
+        // $("#opp-damage").text("");
         if (oppDeafeated === 3) {
           alert("All your enemies have fallen before you!");
           reset();
@@ -286,19 +298,23 @@ $(document).ready(function() {
       $("#csYodaHealth").text(yodaHealth);
       $("#dsObiHealth").text(obiwanHealth);
       if (yodaHealth <= 0) {
+        $("#your-damage").text("You dealt " + yodaAttack + " damage!");
+        $("#opp-damage").text("You took " + obiWanCounter + " damage!");
         alert("You Lose!");
         reset();
       }
 
       if (obiwanHealth <= 0 && yodaHealth > 0) {
+        $("#your-damage").text("You dealt " + yodaAttack + " damage!");
+        $("#opp-damage").text("You took " + obiWanCounter + " damage!");
         alert("You defeated Obi Wan!");
         oppDeafeated++;
         opponentSelected = false;
         oppObiwan = false;
         $(".d1").hide();
         $(".opponents").show();
-        $("#your-damage").text("");
-        $("#opp-damage").text("");
+        // $("#your-damage").text("");
+        // $("#opp-damage").text("");
         if (oppDeafeated === 3) {
           alert("All your enemies have fallen before you!");
           reset();
@@ -322,19 +338,23 @@ $(document).ready(function() {
       $("#csYodaHealth").text(yodaHealth);
       $("#dsDarthMaulHealth").text(darthMaulHealth);
       if (yodaHealth <= 0) {
+        $("#your-damage").text("You dealt " + yodaAttack + " damage!");
+        $("#opp-damage").text("You took " + darthMaulCounter + " damage!");
         alert("You Lose!");
         reset();
       }
 
       if (darthMaulHealth <= 0 && yodaHealth > 0) {
+        $("#your-damage").text("You dealt " + yodaAttack + " damage!");
+        $("#opp-damage").text("You took " + darthMaulCounter + " damage!");
         alert("You defeated Darth Maul!");
         oppDeafeated++;
         opponentSelected = false;
         oppDarthMaul = false;
         $(".d3").hide();
         $(".opponents").show();
-        $("#your-damage").text("");
-        $("#opp-damage").text("");
+        // $("#your-damage").text("");
+        // $("#opp-damage").text("");
         if (oppDeafeated === 3) {
           alert("All your enemies have fallen before you!");
           reset();
@@ -358,19 +378,23 @@ $(document).ready(function() {
       $("#csYodaHealth").text(yodaHealth);
       $("#dsDarthVaderHealth").text(darthVaderHealth);
       if (yodaHealth <= 0) {
+        $("#your-damage").text("You dealt " + yodaAttack + " damage!");
+        $("#opp-damage").text("You took " + darthVaderCounter + " damage!");
         alert("You Lose!");
         reset();
       }
 
       if (darthVaderHealth <= 0 && yodaHealth > 0) {
+        $("#your-damage").text("You dealt " + yodaAttack + " damage!");
+        $("#opp-damage").text("You took " + darthVaderCounter + " damage!");
         alert("You defeated Darth Vader!");
         oppDeafeated++;
         opponentSelected = false;
         oppDarthVader = false;
         $(".d4").hide();
         $(".opponents").show();
-        $("#your-damage").text("");
-        $("#opp-damage").text("");
+        // $("#your-damage").text("");
+        // $("#opp-damage").text("");
         if (oppDeafeated === 3) {
           alert("All your enemies have fallen before you!");
           reset();
@@ -394,19 +418,23 @@ $(document).ready(function() {
       $("#csDarthMaulHealth").text(darthMaulHealth);
       $("#dsObiHealth").text(obiwanHealth);
       if (darthMaulHealth <= 0) {
+        $("#your-damage").text("You dealt " + darthMaulAttack + " damage!");
+        $("#opp-damage").text("You took " + obiWanCounter + " damage!");
         alert("You Lose!");
         reset();
       }
 
       if (obiwanHealth <= 0 && darthMaulHealth > 0) {
+        $("#your-damage").text("You dealt " + darthMaulAttack + " damage!");
+        $("#opp-damage").text("You took " + obiWanCounter + " damage!");
         alert("You defeated Obi Wan!");
         oppDeafeated++;
         opponentSelected = false;
         oppObiwan = false;
         $(".d1").hide();
         $(".opponents").show();
-        $("#your-damage").text("");
-        $("#opp-damage").text("");
+        // $("#your-damage").text("");
+        // $("#opp-damage").text("");
         if (oppDeafeated === 3) {
           alert("All your enemies have fallen before you!");
           reset();
@@ -430,19 +458,23 @@ $(document).ready(function() {
       $("#csDarthMaulHealth").text(darthMaulHealth);
       $("#dsYodaHealth").text(yodaHealth);
       if (darthMaulHealth <= 0) {
+        $("#your-damage").text("You dealt " + darthMaulAttack + " damage!");
+        $("#opp-damage").text("You took " + yodaCounter + " damage!");
         alert("You Lose!");
         reset();
       }
 
       if (yodaHealth <= 0 && darthMaulHealth > 0) {
+        $("#your-damage").text("You dealt " + darthMaulAttack + " damage!");
+        $("#opp-damage").text("You took " + yodaCounter + " damage!");
         alert("You defeated Yoda!");
         oppDeafeated++;
         opponentSelected = false;
         oppYoda = false;
         $(".d2").hide();
         $(".opponents").show();
-        $("#your-damage").text("");
-        $("#opp-damage").text("");
+        // $("#your-damage").text("");
+        // $("#opp-damage").text("");
         if (oppDeafeated === 3) {
           alert("All your enemies have fallen before you!");
           reset();
@@ -466,19 +498,23 @@ $(document).ready(function() {
       $("#csDarthMaulHealth").text(darthMaulHealth);
       $("#dsDarthVaderHealth").text(darthVaderHealth);
       if (darthMaulHealth <= 0) {
+        $("#your-damage").text("You dealt " + darthMaulAttack + " damage!");
+        $("#opp-damage").text("You took " + darthVaderCounter + " damage!");
         alert("You Lose!");
         reset();
       }
 
       if (darthVaderHealth <= 0 && darthMaulHealth > 0) {
+        $("#your-damage").text("You dealt " + darthMaulAttack + " damage!");
+        $("#opp-damage").text("You took " + darthVaderCounter + " damage!");
         alert("You defeated Darth Vader!");
         oppDeafeated++;
         opponentSelected = false;
         oppDarthVader = false;
         $(".d4").hide();
         $(".opponents").show();
-        $("#your-damage").text("");
-        $("#opp-damage").text("");
+        // $("#your-damage").text("");
+        // $("#opp-damage").text("");
         if (oppDeafeated === 3) {
           alert("All your enemies have fallen before you!");
           reset();
@@ -502,19 +538,23 @@ $(document).ready(function() {
       $("#csDarthVaderHealth").text(darthVaderHealth);
       $("#dsObiHealth").text(obiwanHealth);
       if (darthVaderHealth <= 0) {
+        $("#your-damage").text("You dealt " + darthVaderAttack + " damage!");
+        $("#opp-damage").text("You took " + obiWanCounter + " damage!");
         alert("You Lose!");
         reset();
       }
 
       if (obiwanHealth <= 0 && darthVaderHealth > 0) {
+        $("#your-damage").text("You dealt " + darthVaderAttack + " damage!");
+        $("#opp-damage").text("You took " + obiWanCounter + " damage!");
         alert("You defeated Obi Wan!");
         oppDeafeated++;
         opponentSelected = false;
         oppObiwan = false;
         $(".d1").hide();
         $(".opponents").show();
-        $("#your-damage").text("");
-        $("#opp-damage").text("");
+        // $("#your-damage").text("");
+        // $("#opp-damage").text("");
         if (oppDeafeated === 3) {
           alert("All your enemies have fallen before you!");
           reset();
@@ -538,19 +578,23 @@ $(document).ready(function() {
       $("#csDarthVaderHealth").text(darthVaderHealth);
       $("#dsYodaHealth").text(yodaHealth);
       if (darthVaderHealth <= 0) {
+        $("#your-damage").text("You dealt " + darthVaderAttack + " damage!");
+        $("#opp-damage").text("You took " + yodaCounter + " damage!");
         alert("You Lose!");
         reset();
       }
 
       if (yodaHealth <= 0 && darthVaderHealth > 0) {
+        $("#your-damage").text("You dealt " + darthVaderAttack + " damage!");
+        $("#opp-damage").text("You took " + yodaCounter + " damage!");
         alert("You defeated Yoda!");
         oppDeafeated++;
         opponentSelected = false;
         oppYoda = false;
         $(".d2").hide();
         $(".opponents").show();
-        $("#your-damage").text("");
-        $("#opp-damage").text("");
+        // $("#your-damage").text("");
+        // $("#opp-damage").text("");
         if (oppDeafeated === 3) {
           alert("All your enemies have fallen before you!");
           reset();
@@ -574,19 +618,23 @@ $(document).ready(function() {
       $("#csDarthVaderHealth").text(darthVaderHealth);
       $("#dsDarthMaulHealth").text(darthMaulHealth);
       if (darthVaderHealth <= 0) {
+        $("#your-damage").text("You dealt " + darthVaderAttack + " damage!");
+        $("#opp-damage").text("You took " + darthMaulCounter + " damage!");
         alert("You Lose!");
         reset();
       }
 
       if (darthMaulHealth <= 0 && darthVaderHealth > 0) {
+        $("#your-damage").text("You dealt " + darthVaderAttack + " damage!");
+        $("#opp-damage").text("You took " + darthMaulCounter + " damage!");
         alert("You defeated Darth Maul!");
         oppDeafeated++;
         opponentSelected = false;
         oppDarthMaul = false;
         $(".d4").hide();
         $(".opponents").show();
-        $("#your-damage").text("");
-        $("#opp-damage").text("");
+        // $("#your-damage").text("");
+        // $("#opp-damage").text("");
         if (oppDeafeated === 3) {
           alert("All your enemies have fallen before you!");
           reset();
